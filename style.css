@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #125819;
+  background: radial-gradient(circle, #125819 0%, #0a310e 100%);
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.header-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 4rem;
+}
+
+.container {
+  width: 28%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-preferred-size: 25rem;
+      flex-basis: 25rem;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #ffffff;
+  margin-bottom: 3rem;
+}
+
+.btn {
+  border-radius: 50px;
+  -webkit-box-shadow: 5px 5px 18px rgba(0, 0, 0, 0.25);
+          box-shadow: 5px 5px 18px rgba(0, 0, 0, 0.25);
+  font-weight: 500;
+}
+
+#new-game-btn {
+  padding: 0.5rem 1.2rem;
+  margin-top: 2.5rem;
+  background-color: #7D11D1;
+  outline: #7D11D1;
+  border: #7D11D1;
+  color: #ffffff;
+}
+
+#new-game-btn:hover {
+  background-color: #690ab1;
+}
+
+.score-board-container {
+  background: rgba(0, 0, 0, 0.47);
+  -webkit-box-shadow: 5px 5px 18px rgba(0, 0, 0, 0.25);
+          box-shadow: 5px 5px 18px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  margin-top: 1.5rem;
+  padding: 0.8rem;
+}
+
+h4 {
+  color: #ffffff;
+  text-align: center;
+  font-size: 20px;
+}
+
+.flexbox-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.75rem 0;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  /*horizontal alignment*/
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.body-container {
+  padding: 0 12rem 1rem 12rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#textResult {
+  margin-bottom: 0px;
+  color: #ffffff;
+}
+
+table, th, td {
+  width: 25%;
+  text-align: center;
+}
+
+th, td {
+  padding: 0.3rem;
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+#optionsZone {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#gameZone {
+  color: #ffffff;
+}
+
+#userZone, #dealerZone {
+  border: 4px solid #ffffff;
+  border-radius: 10px;
+  padding: 1rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  /* take equal space or width: 50% */
+  height: 22.5rem;
+  min-width: 15rem;
+}
+
+#userZone {
+  border-right: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+#dealerZone {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+#flexbox-container-buttons div {
+  padding: 0.5rem;
+}
+
+.btn-primary {
+  padding: 0.5rem 2.2rem;
+  background-color: #134EE7;
+  outline: #134EE7;
+  border: #134EE7;
+}
+
+.btn-primary:hover {
+  background-color: #0f43c5;
+}
+
+.btn-danger {
+  padding: 0.5rem 2.2rem;
+  background-color: #BD1C1C;
+  outline: #BD1C1C;
+  border: #BD1C1C;
+}
+
+.btn-danger:hover {
+  background-color: #a71616;
+}
+
+.btn-warning {
+  padding: 0.5rem 2.2rem;
+}
+
+@media (max-width: 55em) {
+  .header-container {
+    padding: 0 2rem;
+  }
+  .container {
+    -ms-flex-preferred-size: 10rem;
+        flex-basis: 10rem;
+    -ms-flex-negative: 1;
+        flex-shrink: 1;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .body-container {
+    padding: 0 4rem 1rem 4rem;
+  }
+}
+
+@media (max-width: 38.031em) {
+  #userZone {
+    border-right: solid 4px #ffffff;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
+  }
+  #dealerZone {
+    border-top: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 10px;
+  }
+}
+
+@media (max-width: 29.7em) {
+  h1 {
+    font-size: 20px;
+    margin-bottom: 7rem;
+  }
+  .body-container {
+    padding: 1rem 4rem 1rem 4rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

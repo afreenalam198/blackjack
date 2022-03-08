@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Blackjack</title>
+</head>
+
+<body>
+    <div class="header-container">
+
+        <h1>Blackjack</h1>
+
+        <div class="container">
+            
+            <button class="btn" id="new-game-btn">New Game</button>
+
+            <div class="score-board-container">
+                <h4>Score Board</h4>
+                <table>
+                    <tr>
+                      <th>Wins</th>
+                      <th>Losses</th>
+                      <th>Draws</th>
+                    </tr>
+                    <tr>
+                      <td>
+                          <span id="wins">0</span>
+                      </td>
+                      <td>
+                        <span id="losses">0</span>
+                      </td>
+                      <td>
+                        <span id="draws">0</span>
+                      </td>
+                    </tr>
+                  </table>
+            </div>
+
+        </div>
+
+    </div>
+    
+    <div class="body-container">
+    
+        <div class="flexbox-container">
+            <div>
+                <h3 id="textResult">Let's Play!</h3>
+            </div>
+        </div>
+
+        <div class="flexbox-container" id="gameZone">
+            <div class="flexbox-container-userZone" id="userZone">
+                <h3 style="font-size: 24px">Player: 
+                    <span id="playerScore">0</span>
+                </h3>
+                
+            </div>
+            <div class="flexbox-container-dealerZone" id="dealerZone">
+                <h3 style="font-size: 24px">Dealer: 
+                    <span id="dealerScore">0</span>
+                </h3>
+            </div>
+        </div>
+
+        <div class="flexbox-container" id="optionsZone">
+            <div class="flexbox-container" id="flexbox-container-buttons">
+                <div>
+                    <button class="btn btn-primary" id="hit-btn">Hit</button>
+                </div>
+                <div>
+                    <button class="btn btn-danger" id="stand-btn">Stand</button>
+                </div>
+                <div>
+                    <button class="btn btn-warning" id="deal-btn">Deal</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
